@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "4334184d-231c-416f-b03a-073af6ecd847",
+      "cell_type": "code",
+      "source": "#Task 3: Custom Exception,Age Validator\n\ndef check_age(age):\n    if age < 1 or age > 120:\n        raise ValueError(\"Age must be between 1 and 120\")\n    else:\n        print(\"Age is Valid\")\ntry:\n    age = int(input (\"Enter age :\"))\n    check_age(age)\n\nexcept ValueError as e:\n    print(\"Error:\",e)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter age : 121\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Error: Age must be between 1 and 120\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "036608ce-6581-42f2-9ed8-9ac09c775700",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}

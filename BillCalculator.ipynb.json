@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "719f446b-31e5-4163-92b0-6b3145d52ad2",
+      "cell_type": "code",
+      "source": "#Task2 Bill calculator with error handling \nprices=[120,350,'abc',500,-200,800]\ntotal= 0\nfor price in  prices:\n    try:\n        if not isinstance(price,(int,float)):\n            raise TypeError(\"Not a number\")\n        if price<0:\n            raise ValueError(\"Negative price not allowed\")\n        total= total+ price \n        print (\"Running total:\", total)\n    except TypeError:\n        print(price, \" Invalid item type\")\n    except ValueError as e:\n        print(price,\"->\",e)\nprint (\"Final total:\", total)\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Running total: 120\nRunning total: 470\nabc  Invalid item type\nRunning total: 970\n-200 -> Negative price not allowed\nRunning total: 1770\nFinal total: 1770\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "a3e8c8d6-3ffc-4eb0-9b14-3a4e5d3474bf",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}

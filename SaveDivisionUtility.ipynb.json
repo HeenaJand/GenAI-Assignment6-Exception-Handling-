@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "f97c3b20-bde8-4362-8e02-b9a4c654d1f6",
+      "cell_type": "code",
+      "source": "#Task 1\ntry:\n    numerator = float(input (\"Enter numerator\"))\n    denominator= float(input (\"Entrr Denominator\"))\n\n    result = numerator/denominator \n\nexcept ValueError:\n    print(\" Error! Please enter valid number\")\nexcept ZeroDivisionError:\n    print(\"Error! Cannot divide by zero\")\nelse:\n    print(\"Result is:\", result)\nfinally:\n    print(\"Operation Complete\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter numerator c\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": " Error! Please enter valid number\nOperation Complete\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "0acc4be8-c446-4fca-ae93-6c9c9e39b472",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
